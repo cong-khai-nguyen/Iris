@@ -17,7 +17,7 @@ predict = "class"
 x = np.array(df.drop(columns = [predict]))
 y = np.array(df[predict])
 
-x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size= 0.1)
+x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size= 0.3)
 
 
 
