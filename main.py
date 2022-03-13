@@ -27,7 +27,7 @@ clf.fit(x_train, y_train)
 y_pred = clf.predict(x_test)
 acc = metrics.accuracy_score(y_test, y_pred)
 #96.666667%
-print("SVM(without kernel):", format(acc, "%"))
+print("SVM(with default kernel: rbf):", format(acc, "%"))
 
 
 # use one kernel: linear with soft/hard margin or poly with degree
@@ -36,4 +36,4 @@ clf.fit(x_train, y_train)
 y_pred = clf.predict(x_test)
 accuracy = metrics.accuracy_score(y_test, y_pred)
 # 100.000000%
-print("SVM(with kernel):", format(accuracy, "%"))
+print("SVM(with linear kernel):", format(accuracy, "%"))
